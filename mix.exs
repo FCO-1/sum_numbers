@@ -8,9 +8,9 @@ defmodule SumNumbers.MixProject do
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       build_embedded: Mix.env == :prod,
-      description: description,
-      package: package,
-      deps: deps
+      description: description(),
+      package: package(),
+      deps: deps()
     ]
   end
 

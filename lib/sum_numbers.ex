@@ -5,7 +5,7 @@ defmodule SumNumbers do
   Sums 2 numbers.  and returns the result.
   Example:
   ```
-    iex> sum_numbers.sum(1, 2)
+    iex> SumNumbers.sum_numbers(1, 2)
   """
 
   @doc """
@@ -21,8 +21,12 @@ defmodule SumNumbers do
     :world
   end
 
-  def sun_numbers(a, b) do
+  def sum_numbers(a, b) do
     sum(a, b)
+  end
+
+  def sum_numbers do
+    0
   end
 
   defp sum(a, b)  when a != nil and b != nil do
